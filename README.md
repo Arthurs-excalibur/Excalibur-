@@ -7,7 +7,7 @@ Excalibur is a next-generation integrated development environment built from the
 <img width="1402" height="901" alt="b607ed67-c7a5-4e5d-9acc-4d90efab95d1" src="https://github.com/user-attachments/assets/24dd03b5-646b-4a90-a025-d9ea4737fba1" />
 
 
-## ✨ Key Features
+##  Key Features
 
 - **Autonomous Multi-Agent Orchestration**: Native support for specialized agents (**Planner**, **Coder**, **Debugger**, and **Verifier**) that work together to solve complex architectural challenges.
 - **Local-First LLM Execution**: Integrated `llama.cpp` server support for private, high-performance inference using state-of-the-art models like Qwen2.5-Coder.
@@ -19,7 +19,7 @@ Excalibur is a next-generation integrated development environment built from the
   - **Native Git Integration**: Visual source control and diff management.
 - **Secure by Design**: Workspace boundary enforcement ensures AI agents only interact with the files you authorize.
 
-## 🏗️ Architecture
+##  Architecture
 
 Excalibur utilizes a robust **Tri-Architecture** to ensure performance and stability:
 
@@ -27,7 +27,7 @@ Excalibur utilizes a robust **Tri-Architecture** to ensure performance and stabi
 2.  **Electron Main Process**: Manages system-level bindings, file system security, and window management.
 3.  **Core AI Backend**: The orchestration engine for multi-agent loops, session management, and LLM communication.
 
-## 🚀 Getting Started
+##  Getting Started
 
 To get Excalibur IDE running locally, you'll need to set up the environment and manually provide the AI binaries and models (which are excluded from the repository for performance).
 
@@ -36,7 +36,7 @@ To get Excalibur IDE running locally, you'll need to set up the environment and 
 - **Node.js**: v18.0.0 or higher.
 - **C++ Build Tools**: Required for `node-pty` (Windows users may need [Visual Studio Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)).
 
-### 🛠️ Manual Setup (Important)
+###  Manual Setup (Important)
 
 Since large binaries and models are not tracked in Git, you must set them up manually:
 
@@ -63,7 +63,7 @@ Since large binaries and models are not tracked in Git, you must set them up man
 npm run dev:electron
 ```
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework**: [Electron](https://www.electronjs.org/) + [React](https://reactjs.org/)
 - **Build Tool**: [Vite](https://vitejs.dev/)
@@ -73,10 +73,10 @@ npm run dev:electron
 - **AI Core**: [llama.cpp](https://github.com/ggerganov/llama.cpp)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 
-## 📜 License
+##  License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
-**Built with ⚔️ by Arthur & The Excalibur Team.**
+**Built with ⚔️ by Arthur.**
