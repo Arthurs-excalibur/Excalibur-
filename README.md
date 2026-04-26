@@ -4,7 +4,7 @@
 
 Excalibur is a next-generation integrated development environment built from the ground up to treat AI agents as first-class citizens. Designed with a minimalist "Antigravity" aesthetic, it combines a high-performance local LLM backend with a sophisticated multi-agent orchestration layer to automate complex coding tasks while maintaining a developer-centric, data-dense interface.
 
-![Excalibur Preview](<img width="1402" height="901" alt="b607ed67-c7a5-4e5d-9acc-4d90efab95d1" src="https://github.com/user-attachments/assets/4425620a-2377-4e1c-96ef-022d300cc438" />)
+![Excalibur Preview]
 
 <img width="1402" height="901" alt="b607ed67-c7a5-4e5d-9acc-4d90efab95d1" src="https://github.com/user-attachments/assets/24dd03b5-646b-4a90-a025-d9ea4737fba1" />
 
