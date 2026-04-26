@@ -28,10 +28,19 @@ Excalibur utilizes a robust **Tri-Architecture** to ensure performance and stabi
 
 ## 🚀 Getting Started
 
+To get Excalibur IDE running locally, you'll need to set up the environment and manually provide the AI binaries and models (which are excluded from the repository for performance).
+
 ### Prerequisites
 
-- **Node.js**: v18 or higher.
-- **Local Model**: A GGUF-formatted model (e.g., `qwen2.5-coder-7b-instruct-q4_k_m.gguf`) placed in the `models/` directory.
+- **Node.js**: v18.0.0 or higher.
+- **C++ Build Tools**: Required for `node-pty` (Windows users may need [Visual Studio Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)).
+
+### 🛠️ Manual Setup (Important)
+
+Since large binaries and models are not tracked in Git, you must set them up manually:
+
+1.  **Binaries**: Create a `bin/` folder in the root and place your `llama-server.exe` and all associated `.dll` files inside it.
+2.  **Models**: Create a `models/` folder in the root and place your `.gguf` model files there (e.g., `qwen2.5-coder-7b-instruct-q4_k_m.gguf`).
 
 ### Installation
 
@@ -41,17 +50,15 @@ Excalibur utilizes a robust **Tri-Architecture** to ensure performance and stabi
     cd Excalibur-
     ```
 
-2.  **Install dependencies**:
+2.  **Install Dependencies**:
     ```bash
     npm install
     ```
 
-3.  **Setup Binaries**:
-    Ensure the `llama-server.exe` and necessary DLLs are in the `bin/` directory (ignored by git).
-
 ### Running in Development
 
 ```bash
+# Starts both the Vite dev server and the Electron app
 npm run dev:electron
 ```
 
