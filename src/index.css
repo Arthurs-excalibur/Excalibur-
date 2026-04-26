@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-main: #030303;
+    --scrollbar-track: transparent;
+    --scrollbar-thumb: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-hover: rgba(255, 255, 255, 0.1);
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html, body, #root {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: var(--bg-main) !important;
+  }
+
+  #root {
+    background-color: var(--bg-main);
+  }
+
+  body {
+    color: #ffffff;
+    font-family: "Inter var", "Inter", sans-serif;
+    font-feature-settings: "cv02", "cv05", "cv08", "cv09", "cv11";
+    font-size: 13px;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Frictionless Scrollbars */
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+  ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 10px;
+    transition: all 0.3s;
+  }
+  ::-webkit-scrollbar-thumb:hover { background: var(--scrollbar-thumb-hover); }
+
+  ::selection {
+    background: rgba(168, 85, 247, 0.3);
+    color: #fff;
+  }
+}
+
+@layer components {
+  /* Abyss Layout Components */
+  
+  .glass-panel {
+    @apply bg-surface-glass backdrop-blur-xl border border-border-subtle shadow-glass;
+  }
+
+  .minimal-tab-bar {
+    @apply flex items-center bg-surface-base border-b border-border-subtle px-2 gap-1 h-9;
+    scrollbar-width: none;
+  }
+
+  .minimal-tab {
+    @apply flex items-center gap-2 px-3 py-1.5 text-[11px] font-medium text-text-muted rounded-md transition-all duration-200 cursor-pointer hover:bg-surface-raised hover:text-text-secondary;
+  }
+
+  .minimal-tab.active {
+    @apply bg-surface-raised text-text-primary shadow-soft;
+  }
+
+  .activity-item {
+    @apply w-10 h-10 flex items-center justify-center rounded-xl transition-all duration-300 relative text-text-muted hover:text-text-primary hover:bg-surface-raised;
+  }
+
+  .activity-item.active {
+    @apply text-accent-purple bg-accent-purple/5 shadow-glow-purple ring-1 ring-accent-purple/20;
+  }
+
+  .agent-status-pill {
+    @apply flex items-center gap-2 px-3 py-1 rounded-full bg-surface-raised border border-border-subtle animate-fade-in;
+  }
+
+  .resize-handle-h {
+    @apply w-[1px] bg-border-subtle hover:bg-accent-purple/40 transition-colors z-20 cursor-col-resize;
+  }
+  
+  .resize-handle-v {
+    @apply h-[1px] bg-border-subtle hover:bg-accent-purple/40 transition-colors z-20 cursor-row-resize;
+  }
+
+  .floating-card {
+    @apply bg-surface-overlay border border-border-subtle rounded-xl shadow-glass animate-slide-up;
+  }
+
+  .kbd-elite {
+    @apply inline-flex items-center px-1.5 py-0.5 text-[9px] font-mono rounded bg-surface-raised border border-border-default text-text-muted opacity-60;
+  }
+}
+
+@layer utilities {
+  .drag-region { -webkit-app-region: drag; }
+  .no-drag { -webkit-app-region: no-drag; }
+  
+  .neon-text-purple { text-shadow: 0 0 10px rgba(168, 85, 247, 0.5); }
+  .neon-text-cyan { text-shadow: 0 0 10px rgba(6, 182, 212, 0.5); }
+}
