@@ -1,4 +1,4 @@
-<img width="925" height="101" alt="image" src="https://github.com/user-attachments/assets/3d2f3703-628b-4d51-907d-feeb7fcb699f" /># Excalibur IDE ⚔️
+# Excalibur IDE ⚔️
 
 **The AI-First, Multi-Agent Desktop IDE.**
 
